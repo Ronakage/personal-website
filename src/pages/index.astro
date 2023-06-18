@@ -1,10 +1,16 @@
 ---
+import Title from '../components/Title.astro';
+import WorkSection from '../components/WorkSection.astro';
+import Navbar from '../components/navbar.astro';
 import Layout from '../layouts/Layout.astro';
+
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Rony Mawad's Portfolio">
 	<main>
-		<h1 class="font-bold">Hello, World!</h1>
+		<Navbar/>
+		<Title/>
+		<WorkSection/>
 	</main>
 </Layout>
 
