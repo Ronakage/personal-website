@@ -15,5 +15,8 @@
     "@astrojs/vercel": "^3.5.0",
     "astro": "^2.6.4",
     "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3"
   }
 }
