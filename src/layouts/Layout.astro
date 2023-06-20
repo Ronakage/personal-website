@@ -10,13 +10,14 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content="Astro description"/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-gray-100">
+	<script src="../etc/darkMode.ts"></script>
+	<body class="bg-gray-100 selection:text-orange-600 dark:selection:text-indigo-500 dark:bg-[#202023] dark:text-gray-200 transition-colors duration-1000">
 		<slot />
 	</body>
 </html>
