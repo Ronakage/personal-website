@@ -11,12 +11,10 @@ function themeSwitch() {
         document.documentElement.classList.remove('dark');
         localStorage.setItem("theme", "light");
         document.getElementById("btn").innerHTML="Dark Mode";
-        console.log('light mode 😅');
     }
     else{
         document.documentElement.classList.add('dark');
         document.getElementById("btn").innerHTML="Light Mode";
-        console.log('dark mode 😈');
     }
 }
 
