@@ -5,22 +5,21 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 }
 
 var darkModeButton = document.querySelector(".mode");
-var darkModeButtonText = document.querySelector(".modetext");
 
-function themeSwitch(darkModeButtonText: any) {
+function themeSwitch() {
     if(document.documentElement.classList.contains('dark')){
         document.documentElement.classList.remove('dark');
         localStorage.setItem("theme", "light");
-        darkModeButtonText.value = "Light Mode";
+        document.getElementById("btn").innerHTML="Dark Mode";
         console.log('light mode 😅');
     }
     else{
         document.documentElement.classList.add('dark');
-        darkModeButtonText.value = "Dark Mode";
+        document.getElementById("btn").innerHTML="Light Mode";
         console.log('dark mode 😈');
     }
 }
 
-darkModeButton?.addEventListener("click", (darkModeButtonText) => {
-    themeSwitch(darkModeButtonText);
+darkModeButton?.addEventListener("click", () => {
+    themeSwitch();
 });
