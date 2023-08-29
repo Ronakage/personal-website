@@ -1,0 +1,122 @@
+---
+import SkillSubsection from "./SkillSubsection.astro"
+import SkillComponent from "./SkillComponent.astro"
+---
+
+<div id="skills" class="relative flex py-5 items-center">
+    <div class="flex-grow border-t border-gray-400 shadow-lg"></div>
+    <span class="flex-shrink mx-4 text-2xl font-semibold text-center">SKILLS & CERTIFICATIONS</span>
+    <div class="flex-grow border-t border-gray-400 shadow-lg"></div>
+</div>
+
+<div class="pl-6 font-extralight text-gray-400 animate-pulse duration-1000 ease-in-out">Swipe Left / Press Right Arrow Key</div>
+
+    <SkillSubsection
+    title="LANGUAGES">
+
+      <SkillComponent
+      img="https://static.vecteezy.com/system/resources/previews/019/899/953/non_2x/java-free-download-free-png.png"
+      title="Java"
+      size='h-28 w-28'
+      >
+        <li>Spring</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Multithreading</li>
+        <li>First Language Learned</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://www.pngmart.com/files/7/Python-PNG-File.png"
+      title="Python"
+      size='h-16 w-16'
+      top='pt-6'>
+        <li>Django</li>
+        <li>Pytorch</li>
+        <li>Selenium</li>
+        <li>Discord.py</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
+      title="C#">
+        <li>.NET</li>
+        <li>LINQ</li>
+        <li>Multithreading</li>
+        <li>Windows Presentation Foundation</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://khalilstemmler.com/img/blog/compared/ts-js.png"
+      title="Javascript/Typescript">
+        <li>Node.js (Express.js)</li>
+        <li>React</li>
+        <li>Astro</li>
+      </SkillComponent>
+      
+      <SkillComponent
+      img="https://www.fluttericon.com/logo_dart_192px.svg"
+      title="Dart">
+        <li>iOS, Android and Desktop Developpment (Flutter)</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://cdn-icons-png.flaticon.com/512/2906/2906206.png"
+      title="DATABASES">
+        <li>SQL (PostgreSQL)</li>
+        <li>NoSQL (MongoDB)</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://cdn-icons-png.flaticon.com/512/5115/5115293.png"
+      title="DEV OPS">
+        <li>Github Actions</li>
+        <li>Docker / Kubernetes</li>
+        <li>AWS EC2 / S3</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://ipmspecialist.com/wp-content/uploads/2018/12/Tools-PNG-Transparent-Image.png"
+      title="TOOLS">
+        <li>Visual Studio & Code</li>
+        <li>IntelliJ IDEA</li>
+        <li>ClickUp</li>
+        <li>Jira</li>
+        <li>Confluence</li>
+      </SkillComponent>
+
+    </SkillSubsection>
+
+    <SkillSubsection
+    title="ACHIEVEMENTS">
+
+    <SkillComponent
+      img="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Coursera-Logo_600x600.svg/2048px-Coursera-Logo_600x600.svg.png"
+      title="Certification">
+      <li>Introduction To Cloud Computing</li>
+      <li class="pt-3  text-orange-600 dark:text-indigo-500 flex items-center flex-wrap">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/8DZGZGUTNEZB" class="inline-flex items-center">
+          Click Here <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+              </svg>
+        </a>
+      </li>
+      </SkillComponent>
+    
+      <SkillComponent
+      img="https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/000/332/760/datas/original.jpg"
+      title="Hackathon">
+        <li>ConUHacks VI (2022)</li>
+      </SkillComponent>
+
+      <SkillComponent
+      img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tTbtXGqp86zOW25ftkyjVWhDjpzbOZLuEw&usqp=CAU"
+      title="Hackathon">
+        <li>Hackathon UDEM (2019)</li>
+      </SkillComponent>
+
+
+    </SkillSubsection>
+
+</div>
