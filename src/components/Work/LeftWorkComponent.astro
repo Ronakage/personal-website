@@ -4,9 +4,10 @@ interface Props {
     title: string;
     date: string;
     desc: string;
+    tags?: string;
   }
 
-const { img, title, date, desc } = Astro.props;
+const { img, title, date, desc, tags="" } = Astro.props;
 --- 
 
 <div class="relative z-10">
@@ -20,6 +21,7 @@ const { img, title, date, desc } = Astro.props;
             <span class="font-bold text-orange-600 dark:text-indigo-500 text-sm tracking-wide">{date}</span>
             <h1 class="text-xl font-bold pt-1">{title}</h1>
             <p class="pt-2 text-justify">{desc}</p>
+            <span class="font-light text-orange-600 dark:text-indigo-500 text-sm tracking-wide">{tags}</span>
         </div>
     </div>
 </div>
